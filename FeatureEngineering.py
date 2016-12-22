@@ -160,7 +160,7 @@ train.loc[train["Title"] == "Master", "Title_val"] = 0
 train.loc[train["Title"] == "Miss", "Title_val"] = 1
 train.loc[train["Title"] == "Mr", "Title_val"] = 2
 train.loc[train["Title"] == "Mrs", "Title_val"] = 3
-train.loc[train["Title"] == "Rare Title", "Title_val"] = 3
+train.loc[train["Title"] == "Rare Title", "Title_val"] = 4
 
 feature = ["Pclass", "AgeFill", "SibSp", "Parch", "Fare", "Fsize", "Embarked_val",
             "FsizeD_val", "Sex_val", "Title_val"]
