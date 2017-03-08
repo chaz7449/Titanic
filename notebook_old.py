@@ -64,7 +64,7 @@ mosaic(fullData, ['FsizeD', 'Survived']);
 fullData.loc[fullData["Embarked"].isnull(), ]
 fullData.boxplot(column='Fare', by=['Embarked', "Pclass"]);
 fullData.loc[61, "Embarked"] = "C"
-fullData.loc[829, "Embarked"] = "S"
+fullData.loc[829, "Embarked"] = "C"
 
 fullData.loc[fullData["Sex"] == "male", "Sex_val"] = 0
 fullData.loc[fullData["Sex"] == "female", "Sex_val"] = 1
